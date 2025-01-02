@@ -8,7 +8,7 @@ const AppContextProvider = (props) => {
   const [token, setToken] = useState(localStorage.getItem("token") ? localStorage.getItem('token') : false);
   console.log(token)
   const currencySymbol = 'Rs.';
-  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000';
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://doctors-appointments-backend.onrender.com';
   const [doctors, setDoctors] = useState([]);
   const [userData, setUserData] = useState(false);
 
