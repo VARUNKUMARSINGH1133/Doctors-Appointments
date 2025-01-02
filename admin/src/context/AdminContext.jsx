@@ -13,7 +13,7 @@ const AdminContextProvider=(props)=>{
     const[appointments,setAppointments]= useState([])
     const [doctors,setDoctors]= useState([])
     const [aToken,setAToken]= useState(localStorage.getItem('aToken')?localStorage.getItem('aToken'):'')
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000';
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://doctors-appointments-backend.onrender.com';
     const getAllDoctors= async()=>{
         try{
             const {data}= await axios.post(backendUrl+`/api/admin/all-doctors`,{},{headers:{aToken}})
