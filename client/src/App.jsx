@@ -5,7 +5,7 @@ import Login from './assets/pages/Login';
 import MyProfile from './assets/pages/MyProfile';
 import Contact from './assets/pages/Contact';
 import About from './assets/pages/About';
-import Home from './assets/pages/home';
+import Home from './assets/pages/Home';
 import Appointment from './assets/pages/Appointment';
 import Navbar from './components/Navbar';
 import { ToastContainer, toast } from 'react-toastify';
